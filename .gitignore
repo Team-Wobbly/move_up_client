@@ -1,0 +1,8 @@
+node_modules
+typings
+jspm_packages
+bower_components
+app/**/*.js
+app/**/*.map
+*.log
+build/*
