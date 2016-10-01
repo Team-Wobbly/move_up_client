@@ -1,16 +1,19 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "system",
+    "module":"commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
-    "watch": true
+    "removeComments": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "types": []
   },
   "exclude": [
-    "node_modules"
+      "node_modules",
+      "build"
   ]
 }
