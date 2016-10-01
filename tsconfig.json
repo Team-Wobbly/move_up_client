@@ -10,7 +10,8 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
-    "types": []
+    "types": [],
+    "outDir": "build"
   },
   "exclude": [
       "node_modules",
