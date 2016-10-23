@@ -3,7 +3,7 @@
     "target": "es6",
     "module":"commonjs",
     "moduleResolution": "node",
-    "sourceMap": true,
+    "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": true,
@@ -11,10 +11,9 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "types": [],
-    "outDir": "build"
+    "outDir": "build/app"
   },
   "exclude": [
-      "node_modules",
-      "build"
+      "node_modules"
   ]
 }

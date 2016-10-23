@@ -21,12 +21,12 @@ gulp.task('compile', ['clean'], function () {
   return gulp
     .src('app/**/*.ts')
     .pipe(typescript(tscConfig.compilerOptions))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build/app'));
 });
 
 gulp.task('copy:assets', ['clean'], function() {
-  //return gulp.src(['app/**/*', 'index.html', 'styles.css', '!app/**/*.ts'], { base : './' })
-    //.pipe(gulp.dest('build'))
+  return gulp.src(['app/**/*', 'index.html', 'styles.css', '!app/**/*.ts'], { base : './' })
+    .pipe(gulp.dest('build'))
 });
 
 gulp.task('build', ['compile', 'copy:assets']);
